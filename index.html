@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celeritas Freight Solutions</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                keyframes: {
+                    truckSlide: {
+                        '0%': {
+                            transform: 'translateX(-900px)'
+                        },
+                        '100%': {
+                            transform: 'translateX(3vw)'
+                        }
+                    }
+                },
+                animation: {
+                    truckSlide: 'truckSlide 2s ease-out forwards'
+                }
+            }
+        }
+    }
+</script>
+</head>
+
+<body class="m-0 min-h-screen bg-white font-sans antialiased">
+    <!-- =========================
+       TOP HEADER
+       ========================= -->
+    <header class="relative h-[217px] w-full overflow-hidden bg-white">
+        <!-- Sunset/header image from the reference -->
+        <img src="C:\Users\Latitude5420\Desktop\CFS WEBSITE\Images\SUN_RISE_BG.png" alt="Sunrise over a landscape"
+            class="absolute right-0 top-0 h-full max-w-[1500px] w-[1500px] md:max-w-[1500px] lg:max-w-[1500px]  object-cover object-center" />
+
+        <!-- Main centered header area -->
+        <div class="relative mx-auto h-full max-w-[1240px]">
+            <!-- CFS logo -->
+            <img src="C:\Users\Latitude5420\Desktop\CFS WEBSITE\Images\CFS_WEB_LOGO.png" alt="Celeritas Freight Solutions"
+                class="absolute left-[-40px] top-[18px] z-10 h-[198px] w-[400px] object-contain" />
+
+            <!-- Tagline -->
+            <div
+                class="absolute left-[403px] top-[100px] whitespace-nowrap text-[31px] font-bold italic leading-none text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
+                LOGISTICS AT THE SPEED OF LIGHT
+            </div>
+
+            <!-- Phone number -->
+            <a href="tel:+13122241724"
+                class="absolute right-0 top-[100px] whitespace-nowrap text-[30px] font-normal leading-none text-white">
+                (312) 224-1724
+            </a>
+        </div>
+    </header>
+
+    <!-- =========================
+       NAVIGATION
+       ========================= -->
+    <nav class="h-[80px] w-full bg-[#c71924]">
+        <div
+            class="mx-auto flex h-full max-w-[1080px] items-center justify-center gap-[20px] overflow-x-auto whitespace-nowrap px-4 text-[21px] font-normal text-white">
+            <a href="#"
+                class="relative flex h-full items-center border-b-[2px] border-[#7f1117] px-[12px] transition-colors duration-200 hover:text-white">
+                Home
+            </a>
+            <a href="#about" class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                About Us
+            </a>
+            <a href="#shippers"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Shippers &amp; Receivers
+            </a>
+            <a href="#carriers"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Carriers
+            </a>
+            <a href="#quote" class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Quote
+            </a>
+            <a href="#services"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Services
+            </a>
+            <a href="#data-analysis"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Data Analysis
+            </a>
+            <a href="#careers"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Careers
+            </a>
+            <a href="#contact"
+                class="flex h-full items-center px-[1px] transition-opacity duration-200 hover:opacity-75">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- =========================
+       HERO
+       ========================= -->
+    <!-- =========================
+     HERO
+     ========================= -->
+    <main>
+        <section class="relative h-[415px] w-full overflow-hidden">
+
+            <!-- Road / landscape background WITHOUT truck -->
+            <img src="C:\Users\Latitude5420\Desktop\CFS WEBSITE\Images\ROAD.png" alt="Freight highway"
+                class="absolute inset-0 h-full w-full object-cover" />
+
+            <!-- =========================
+         ANIMATED TRUCK
+         ========================= -->
+            <img src="C:\Users\Latitude5420\Desktop\CFS WEBSITE\Images\TRUCK.png" alt="CFS freight truck"
+                class="absolute top-[50px] left-0 z-10 w-[700px] max-w-none animate-truckSlide" />
+
+            <!-- Hero text -->
+            <div class="relative mx-auto h-full max-w-[1240px]">
+
+                <div class="absolute right-0 top-[66px] z-20 w-[340px] text-white">
+
+                    <h1
+                        class="m-0 text-[39px] font-bold leading-[1.26] tracking-[-1.4px] drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]">
+                        <span class="block">
+                            E=MC<sup class="relative -top-[0.18em] text-[25px]">2</sup>
+                        </span>
+
+                        <span class="mt-[18px] block">
+                            CELERITAS FREIGHT
+                        </span>
+
+                        <span class="block">
+                            SOLUTIONS IS
+                        </span>
+
+                        <span class="block">
+                            LOGISTICS AT THE
+                        </span>
+
+                        <span class="block">
+                            SPEED OF LIGHT
+                        </span>
+                    </h1>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <!-- =========================
+       REFERENCE PAGE CONTINUATION
+       ========================= -->
+    <div class="h-[14px] w-full bg-[#c71924]"></div>
+
+    <!--
+    The screenshot ends at the red strip above.
+    The following content is intentionally omitted so the rendered
+    viewport matches the supplied landing-page screenshot exactly.
+  -->
+</body>
+
+</html>
